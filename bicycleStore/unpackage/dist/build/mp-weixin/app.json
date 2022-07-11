@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/login/index",
+    "pages/user/register/index",
+    "pages/user/checking/index",
+    "pages/list/list",
+    "pages/cart/cart",
+    "pages/persenal/persenal",
+    "pages/details/details",
+    "pages/cart/order"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F7",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#d8d8d8",
+    "selectedColor": "#444",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/icon/png/shouye.png",
+        "selectedIconPath": "static/icon/png/shouye1.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "分类",
+        "iconPath": "static/icon/png/liebiao1.png",
+        "selectedIconPath": "static/icon/png/zihangche.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "static/icon/png/gouwuche.png",
+        "selectedIconPath": "static/icon/png/24gf-cartFull6.png"
+      },
+      {
+        "pagePath": "pages/persenal/persenal",
+        "text": "个人中心",
+        "iconPath": "static/icon/png/geren.png",
+        "selectedIconPath": "static/icon/png/geren2.png"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {
+    "top-custom": "/components/TopCustom",
+    "list-item": "/components/ListItem"
+  },
+  "sitemapLocation": "sitemap.json"
+}

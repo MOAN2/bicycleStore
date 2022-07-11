@@ -1,0 +1,1 @@
+<view><view class="u-demo-block"><u-swiper vue-id="43c57e5b-1" list="{{imgList}}" previousMargin="30" nextMargin="30" circular="{{true}}" autoplay="{{true}}" radius="5" bgColor="#ffffff" height="350" bind:__l="__l"></u-swiper></view></view>

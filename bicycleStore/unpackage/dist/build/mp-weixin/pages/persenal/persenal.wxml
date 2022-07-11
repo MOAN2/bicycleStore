@@ -1,0 +1,52 @@
+<view class="data-v-1e51de03">
+  <top-custom vue-id="07cc4800-1" title="{{pageTitle}}" class="data-v-1e51de03" bind:__l="__l"></top-custom>
+  <u-popup class="pop data-v-1e51de03" vue-id="07cc4800-2" show="{{showOrder}}" mode="right" safeAreaInsetTop="{{true}}" safeAreaInsetBottom="{{true}}" data-event-opts="{{[['^close',[['closeOrder']]]]}}" bind:close="__e" bind:__l="__l" vue-slots="{{['default']}}">
+    <view class="data-v-1e51de03"><text class="margin fs-30 data-v-1e51de03">查看订单信息</text>
+      <view class="u-demo-block__content margin data-v-1e51de03">
+        <u-steps vue-id="{{('07cc4800-3')+','+('07cc4800-2')}}" current="{{1}}" activeColor="#3c9cff" class="data-v-1e51de03" bind:__l="__l" vue-slots="{{['default']}}">
+          <u-steps-item vue-id="{{('07cc4800-4')+','+('07cc4800-3')}}" title="已下单" class="data-v-1e51de03" bind:__l="__l"></u-steps-item>
+          <u-steps-item vue-id="{{('07cc4800-5')+','+('07cc4800-3')}}" title="正在出库" class="data-v-1e51de03" bind:__l="__l"></u-steps-item>
+          <u-steps-item vue-id="{{('07cc4800-6')+','+('07cc4800-3')}}" title="运输中" class="data-v-1e51de03" bind:__l="__l"></u-steps-item>
+        </u-steps>
+      </view>
+      <block wx:for="{{orders}}" wx:for-item="order" wx:for-index="index" wx:key="index">
+        <u-collapse vue-id="{{('07cc4800-7-'+index)+','+('07cc4800-2')}}" class="data-v-1e51de03" bind:__l="__l" vue-slots="{{['default']}}">
+          <u-collapse-item class="margin fs-30  u-border-bottom data-v-1e51de03" vue-id="{{('07cc4800-8-'+index)+','+('07cc4800-7-'+index)}}" title="{{'订单：'+(index+1)}}" name="Order guide" bind:__l="__l" vue-slots="{{['default']}}">
+            <view class="margin-top  flex flex-direction  data-v-1e51de03"><text class="padding-top fs-30 data-v-1e51de03">{{"车辆名称："+order.title}}</text><text class="padding-top fs-30 data-v-1e51de03">{{"收货人姓名："+order.name}}</text><text class="padding-top fs-30 data-v-1e51de03">{{"收货人电话："+order.tel}}</text><text class="padding-top fs-30 data-v-1e51de03">{{"送达地址："+order.address}}</text><text class="padding-top fs-30 data-v-1e51de03">{{"预计送达时间："+order.time}}</text><text class="padding-top fs-30 data-v-1e51de03">{{"订单价格："+order.price}}</text></view>
+          </u-collapse-item>
+        </u-collapse>
+      </block>
+    </view>
+  </u-popup>
+  <view class="data-v-1e51de03">
+    <u-action-sheet vue-id="07cc4800-9" actions="{{listSetting}}" title="{{titleSetting}}" show="{{showSetting}}" closeOnClickOverlay="{{true}}" cancelText="取消" data-event-opts="{{[['^select',[['selectClick']]],['^close',[['closeSetting']]]]}}" bind:select="__e" bind:close="__e" class="data-v-1e51de03" bind:__l="__l"></u-action-sheet>
+  </view>
+  <u-modal vue-id="07cc4800-10" show="{{showInfo}}" title="个人信息" closeOnClickOverlay="{{true}}" data-event-opts="{{[['^close',[['closeInfo']]],['^confirm',[['e0']]]]}}" bind:close="__e" bind:confirm="__e" class="data-v-1e51de03" bind:__l="__l" vue-slots="{{['default']}}">
+    <view class="margin-top  flex flex-direction  data-v-1e51de03"><text class="padding-top fs-30 data-v-1e51de03">{{"用户名："+userinfo.username}}</text><text class="padding-top fs-30 data-v-1e51de03">{{"用户电话："+userinfo.tel}}</text><text class="padding-top fs-30 data-v-1e51de03">{{"邮箱："+userinfo.email}}</text><text class="padding-top fs-30 data-v-1e51de03">{{userType}}</text></view>
+  </u-modal>
+  <u-modal vue-id="07cc4800-11" show="{{showAdd}}" title="我的地址" closeOnClickOverlay="{{true}}" data-event-opts="{{[['^close',[['closeAdd']]],['^confirm',[['e1']]]]}}" bind:close="__e" bind:confirm="__e" class="data-v-1e51de03" bind:__l="__l" vue-slots="{{['default']}}">
+    <block wx:for="{{adds}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+      <view class="margin-top flex justify-around  data-v-1e51de03"><text class="padding-top fs-30 data-v-1e51de03">{{"地址"+(index+1)+":"+item.address}}</text></view>
+    </block>
+  </u-modal>
+  <view class="container data-v-1e51de03">
+    <view class="avatar data-v-1e51de03">
+      <u-avatar vue-id="07cc4800-12" text="{{$root.g0}}" fontSize="28" randomBgColor="{{true}}" size="80" class="data-v-1e51de03" bind:__l="__l"></u-avatar>
+      <u-tag class="tag data-v-1e51de03" vue-id="07cc4800-13" text="1" type="warning" icon="level" bind:__l="__l"></u-tag>
+    </view>
+    <view class="name data-v-1e51de03"><text class="data-v-1e51de03">{{userinfo.username}}</text></view>
+    <view class="content data-v-1e51de03">
+      <u-grid vue-id="07cc4800-14" border="{{true}}" data-event-opts="{{[['^click',[['click']]]]}}" bind:click="__e" class="data-v-1e51de03" bind:__l="__l" vue-slots="{{['default']}}">
+        <block wx:for="{{$root.l0}}" wx:for-item="Item" wx:for-index="Index" wx:key="Index">
+          <u-grid-item vue-id="{{('07cc4800-15-'+Index)+','+('07cc4800-14')}}" class="data-v-1e51de03" bind:__l="__l" vue-slots="{{['default']}}">
+            <u-icon vue-id="{{('07cc4800-16-'+Index)+','+('07cc4800-15-'+Index)}}" customStyle="{{Item.a0}}" name="{{Item.$orig.name}}" size="{{40}}" class="data-v-1e51de03" bind:__l="__l"></u-icon><text class="grid-text data-v-1e51de03">{{Item.$orig.title}}</text>
+          </u-grid-item>
+        </block>
+      </u-grid>
+      <u-toast vue-id="07cc4800-17" data-ref="uToast" class="data-v-1e51de03 vue-ref" bind:__l="__l"></u-toast>
+      <view class="   btn   data-v-1e51de03">
+        <u-button vue-id="07cc4800-18" type="primary" icon="close" text="退出登录 " plain="{{true}}" shape="circle" color="green" data-event-opts="{{[['^tap',[['exitLogin']]]]}}" bind:tap="__e" class="data-v-1e51de03" bind:__l="__l"></u-button>
+      </view>
+    </view>
+  </view>
+</view>

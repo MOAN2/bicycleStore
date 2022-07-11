@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "购物车",
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-back-top": "/uni_modules/uview-ui/components/u-back-top/u-back-top",
+    "u-empty": "/uni_modules/uview-ui/components/u-empty/u-empty",
+    "u-overlay": "/uni_modules/uview-ui/components/u-overlay/u-overlay",
+    "u-number-box": "/uni_modules/uview-ui/components/u-number-box/u-number-box",
+    "cart-item": "/components/cartItem",
+    "order": "/components/order"
+  }
+}

@@ -1,0 +1,21 @@
+<view>
+  <view class="container">
+    <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+      <view data-event-opts="{{[['tap',[['setDetail',[index]]]]]}}" class="box" bindtap="__e">
+        <view class="list-info">
+          <view class="list-img">
+            <image src="{{item.imgUrl}}" alt="商品" class="_img"></image>
+          </view>
+          <view class="title  ">
+            <u--text vue-id="{{'37e4044c-1-'+index}}" lines="{{1}}" text="{{item.title}}" bind:__l="__l"></u--text>
+          </view>
+          <view class="type fs-20"><text>{{item.type}}</text></view>
+          <view class="price  ">
+            <view class="_i"> </view><text>¥{{item.price}}</text>
+          </view>
+        </view>
+        <view class="list-carticon"><text class="iconfont  icon-24gf-cartFull6 "></text></view>
+      </view>
+    </block>
+  </view>
+</view>

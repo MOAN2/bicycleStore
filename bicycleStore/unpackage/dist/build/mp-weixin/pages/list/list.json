@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "浏览您心仪的车辆",
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-back-top": "/uni_modules/uview-ui/components/u-back-top/u-back-top",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup",
+    "u-collapse": "/uni_modules/uview-ui/components/u-collapse/u-collapse",
+    "u-collapse-item": "/uni_modules/uview-ui/components/u-collapse-item/u-collapse-item",
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag"
+  }
+}

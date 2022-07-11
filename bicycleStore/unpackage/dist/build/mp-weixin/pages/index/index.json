@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "欢迎来到网上车行",
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-back-top": "/uni_modules/uview-ui/components/u-back-top/u-back-top",
+    "u-scroll-list": "/uni_modules/uview-ui/components/u-scroll-list/u-scroll-list",
+    "scroll-img": "/components/scrollImg",
+    "index-title": "/components/indexTitle"
+  }
+}

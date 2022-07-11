@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uni_modules/uview-ui/components/u-overlay/u-overlay"],{"0529":function(n,t,e){"use strict";e.r(t);var u=e("c9f2"),i=e("10ca");for(var c in i)"default"!==c&&function(n){e.d(t,n,(function(){return i[n]}))}(c);e("98b7");var o,r=e("f0c5"),a=Object(r["a"])(i["default"],u["b"],u["c"],!1,null,"72cb839f",null,!1,u["a"],o);t["default"]=a.exports},"10ca":function(n,t,e){"use strict";e.r(t);var u=e("c99c"),i=e.n(u);for(var c in u)"default"!==c&&function(n){e.d(t,n,(function(){return u[n]}))}(c);t["default"]=i.a},"98b7":function(n,t,e){"use strict";var u=e("b5dc"),i=e.n(u);i.a},b5dc:function(n,t,e){},c99c:function(n,t,e){"use strict";(function(n){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var u=i(e("c98f"));function i(n){return n&&n.__esModule?n:{default:n}}var c={name:"u-overlay",mixins:[n.$u.mpMixin,n.$u.mixin,u.default],computed:{overlayStyle:function(){var t={position:"fixed",top:0,left:0,right:0,zIndex:this.zIndex,bottom:0,"background-color":"rgba(0, 0, 0, ".concat(this.opacity,")")};return n.$u.deepMerge(t,n.$u.addStyle(this.customStyle))}},methods:{clickHandler:function(){this.$emit("click")}}};t.default=c}).call(this,e("543d")["default"])},c9f2:function(n,t,e){"use strict";e.d(t,"b",(function(){return i})),e.d(t,"c",(function(){return c})),e.d(t,"a",(function(){return u}));var u={uTransition:function(){return Promise.all([e.e("common/vendor"),e.e("uni_modules/uview-ui/components/u-transition/u-transition")]).then(e.bind(null,"7165"))}},i=function(){var n=this,t=n.$createElement;n._self._c},c=[]}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uni_modules/uview-ui/components/u-overlay/u-overlay-create-component',
+    {
+        'uni_modules/uview-ui/components/u-overlay/u-overlay-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("0529"))
+        })
+    },
+    [['uni_modules/uview-ui/components/u-overlay/u-overlay-create-component']]
+]);

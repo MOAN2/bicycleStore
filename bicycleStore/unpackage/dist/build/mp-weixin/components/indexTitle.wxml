@@ -1,0 +1,1 @@
+<view class="padding flex justify-between align-center "><view class="flex align-center"><view class="{{[titleList.icon]}}"></view><view class="padding flex "><view class="fs-30 ">{{titleList.title+''}}<view class="fs-14 color-98">{{titleList.des+''}}</view></view></view></view><view class="fs-28 color-92">{{titleList.type}}</view></view>
